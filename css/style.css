@@ -47,11 +47,6 @@ a {
   justify-content: flex-end;
 }
 
-.nav-item {
-  text-align: center;
-  padding: 14px 16px;
-}
-
 .topnav a {
   color: #f3f5f7;
   text-align: center;
@@ -62,10 +57,51 @@ a {
 .topnav a:hover {
   background-color: #f3f5f7;
   color: #232c33;
+  border: 1px solid #f3f5f7;
 }
 
 .topnav .active {
   font-weight: bold;
+}
+
+.topnav div {
+  width: 75px;
+  padding: 15px 10px;
+}
+
+/*Gallery Dropdown*/
+
+#gal-list {
+  display: none;
+  position: absolute;
+  top: 49px;
+  right: 35px;
+  width: 125px;
+  z-index: 1;
+  background-color: #f3f5f7;
+}
+
+#gal-list a {
+  color: #232c33;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+#gal-list a:hover{
+  font-weight: bold;
+}
+
+#gallery:hover #gal-list{display:block;}
+
+#gal-list:hover {
+  display: block;
+}
+
+#gallery:hover a {
+  background-color: #f3f5f7;
+  color: #232c33;
+  border: 1px solid #f3f5f7;
 }
 
 /*Hero Content*/
@@ -153,6 +189,7 @@ a {
 .proj img {
   display: block;
   margin: auto;
+  width: 100%;
 }
 
 /*Bio Flexbox*/
@@ -208,6 +245,17 @@ flex: 50%;
   .topnav a{
     margin: auto;
     width: 100%;
+  }
+
+  .topnav div {
+    display: flex;
+    margin: auto;
+    width: 100%;
+    padding: 0px;
+  }
+
+  #gallery:hover #gal-list{
+    display: none;
   }
 
   .footer {

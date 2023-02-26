@@ -3,10 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="This site is a multi-page website template created by Chelsea Thompto."
-    />
+    <meta name="description" content="This site is a multi-page website template created by Chelsea Thompto." />
     <title>Multi-page Website Template</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,11 +11,20 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <!--Navigation Bar-->
     <div class="topnav">
-      <a class="active" href="./">Home</a>
-      <a href="./gallery/">Gallery</a>
-      <a href="./bio/">Bio</a>
+      <div><a class="active" href="./">Home</a></div>
+      <div id="gallery">
+        <a href="./gallery/">Gallery</a>
+        <div id="gal-list">
+          <a href="./gallery/project1/">Project 1</a>
+          <a href="./gallery/project2/">Project 2</a>
+          <a href="./gallery/project3/">Project 3</a>
+        </div>
+      </div>
+      <div><a href="./bio/">Bio</a></div>
     </div>
+    <!--Splash Image Section-->
     <div class="hero">
       <img
         src="./img/demobanner_big.png"
@@ -34,6 +40,7 @@
         Digital Color Gradient.
       </p>
     </div>
+    <!--Main Content-->
     <div class="content">
       <div>
         <h2>
@@ -62,6 +69,7 @@
         <p><a href="https://byhand.website" target="_blank">https://byhand.website</a></p>
       </div>
     </div>
+    <!--Footer Section-->
     <footer class="footer">
         <p>
           Designed by Chelsea Thompto | <a href="https://chelsea.technology/" target="_blank">https://chelsea.technology/</a> | 2023 MIT License

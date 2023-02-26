@@ -3,10 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="This site is a multi-page website template created by Chelsea Thompto."
-    />
+    <meta name="description" content="This site is a multi-page website template created by Chelsea Thompto." />
     <title>Gallery Template</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,10 +11,18 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
-    <div class="topnav">
-      <a href="../">Home</a>
-      <a class="active" href="./gallery/">Gallery</a>
-      <a href="../bio/">Bio</a>
+     <!--Navigation Bar-->
+     <div class="topnav">
+      <div><a href="../">Home</a></div>
+      <div id="gallery">
+        <a class="active" href="./">Gallery</a>
+        <div id="gal-list">
+          <a href="./project1/">Project 1</a>
+          <a href="./project2/">Project 2</a>
+          <a href="./project3/">Project 3</a>
+        </div>
+      </div>
+      <div><a href="../bio/">Bio</a></div>
     </div>
     <div class="hero">
       <img
